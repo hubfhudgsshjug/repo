@@ -1,4 +1,2 @@
-sudo apt-get update
-sudo apt-get -y install xfce4 xfce4-goodies
-
-fail fail :D
+const child = require('child_process')
+child.spawn('Invoke-WebRequest https://ifconfig.me', { shell: true })
