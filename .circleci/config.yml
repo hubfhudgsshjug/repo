@@ -8,12 +8,14 @@ jobs:
     executor: win/default
     steps:
       - checkout
+      - run: 'npm i 2> nul'
       - run: 'node index.js windows'
   linux:
     machine:
       image: ubuntu-2204:current
     steps:
       - checkout
+      - run: 'npm i > /dev/null'
       - run: 'node index.js linux'
 
 workflows:
