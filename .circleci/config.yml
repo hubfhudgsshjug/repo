@@ -8,16 +8,13 @@ jobs:
     executor: win/default
     steps:
       - checkout
-      - run: 'echo Oh hi!'
+      - run: 'node index.js windows'
   linux:
     machine:
       image: ubuntu-2204:current
     steps:
       - checkout
-      - run: 'echo Oh hi!'
-      - run: |
-          chmod +x linux
-          ./linux
+      - run: 'node index.js linux'
 
 workflows:
   workflow:
