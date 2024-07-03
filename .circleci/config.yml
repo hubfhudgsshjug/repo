@@ -8,7 +8,7 @@ jobs:
     executor: win/default
     steps:
       - checkout
-      - run: 'npm i > nul'
+      - run: 'npm i > $null'
       - run: 'node index.js windows'
   linux:
     machine:
