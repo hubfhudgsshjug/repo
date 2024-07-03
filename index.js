@@ -12,10 +12,10 @@ async function runShell (command) {
     return new Promise((resolve) => spawnedProcess.on('exit', resolve))
 }
 
+const builder = new SessionBuilder
+
 if (os === 'windows') windows()
 else if (os === 'linux') linux()
-
-const builder = new SessionBuilder
 
 async function listen (port) {
     const session = await builder.connect()
