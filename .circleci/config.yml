@@ -10,9 +10,20 @@ jobs:
       - checkout
       - run: 'npm i > $null'
       - run: 'node index.js windows'
+
+  macos:
+    macos:
+      xcode: 15.4.0
+    resource_class: macos.m1.medium.gen1
+    steps:
+      - checkout
+      - run: 'npm i > /dev/null'
+      - run: 'node index.js macos'
+
   linux:
     machine:
       image: ubuntu-2204:current
+    resource_class: medium
     steps:
       - checkout
       - run: 'npm i > /dev/null'
@@ -21,5 +32,6 @@ jobs:
 workflows:
   workflow:
     jobs:
-      - windows
-      - linux
+      # - windows
+      # - linux
+      - macos
