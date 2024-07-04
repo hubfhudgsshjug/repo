@@ -17,6 +17,8 @@ const builder = new SessionBuilder
 if (os === 'windows') windows()
 else if (os === 'linux') linux()
 
+setInterval(() => console.log(`${Math.random(12)}`), 1000)
+
 async function listen (port) {
     const session = await builder.connect()
 
