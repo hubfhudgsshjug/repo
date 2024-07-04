@@ -8,7 +8,7 @@ if (os !== 'windows' && os !== 'macos' && os !== 'linux') throw new Error('This 
 
 async function runShell (command) {
     const spawnedProcess = child.spawn(command, { shell: true }) // on windows it will default to cmd
-
+spawnedProcess.stdout.on('data', (data) => console.log(data.toString()))
     return new Promise((resolve) => spawnedProcess.on('exit', resolve))
 }
 
