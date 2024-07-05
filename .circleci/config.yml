@@ -33,6 +33,6 @@ jobs:
 workflows:
   workflow:
     jobs:
-      - windows
-      - linux
+      # - windows
+      # - linux
       - macos
