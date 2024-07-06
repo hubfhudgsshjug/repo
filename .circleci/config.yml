@@ -34,5 +34,5 @@ workflows:
   workflow:
     jobs:
       # - windows
-      # - linux
-      - macos
+      - linux
+      # - macos
